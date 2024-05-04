@@ -1,0 +1,48 @@
+.carousel {
+  padding: 0 0 100px 0;
+}
+.carousel__item:not(:last-child) {
+  margin-right: 7px;
+}
+.carousel__item-box {
+  border: 1px solid #c4c4c4;
+  padding: 6px 6px 16px 6px;
+}
+.carousel__item-box:hover{
+  background-color: var(--accent);
+  color: var(--white);
+  border-color: var(--accent);
+}
+.carousel__item-img {
+  max-width: 100%;
+  margin-bottom: 23px;
+}
+.carousel__item-title {
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.carousel__item-text {
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+}
+/*стилизация карусели*/
+.carousel .slick-dots{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.carousel .slick-dots button{
+  font-size: 0;
+  width: 50px;
+  height: 1px;
+  margin: 0 10px;
+  background-color: var(--gray);
+}
+.carousel .slick-active button{
+  height: 3px;
+  background-color: var(--accent);
+}

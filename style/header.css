@@ -1,0 +1,27 @@
+
+.header {
+  position: absolute;
+  top: 47px;
+  left: 0;
+  right: 0;
+  outline: 1px solid white;
+}
+.header__container{
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  outline: 1px solid red;
+  width: 197px;
+  height: 53px;
+}
+.logo__image {
+  width: 100%;
+  height: auto;
+}
+.header__link {
+  color: var(--white);
+  font-size: 36px;
+  text-transform: uppercase;
+  outline: 3px solid green;
+}

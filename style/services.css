@@ -1,0 +1,120 @@
+.services {
+  padding: 300px 0 100px 0;
+}
+.services__inner {
+ display: flex;
+}
+.title {
+  font-size: 36px;
+  font-weight: 400;
+  color: var(--branded);
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  outline: 1px solid;
+  display: inline-block;
+}
+.title_line {
+  position: relative;
+}
+.title_line::before {
+  position: absolute;
+  content: '';
+  width: 80px;
+  height: 0;
+  border: 1px solid var(--branded);
+  top: 50%;
+  right: -100px;
+}
+.text {
+  outline: 1px solid;
+  width: 505px;
+  margin-right: 96px;
+}
+.text__list {
+  margin-bottom: 50px;
+}
+.text__item:not(:last-child) {
+  margin-bottom: 69px;
+}
+.text__item-title {
+  color: var(--accent);
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 12px;
+}
+.text__content {
+  font-weight: 300;
+  line-height: 20px;
+}
+.text__content:not(:last-child) {
+  margin-bottom: 12px;
+}
+.button-consultation {
+}
+.button-consultation_line {
+  margin-bottom: 0;
+  position: relative;
+}
+.button-consultation_line::before {
+  content: 'ЖМИ';
+  position: absolute;
+  top: 50%;
+  right: -110px;
+  transform: translateY(-50%);
+  color: var(--gray);
+  font-size: 14px;
+  font-weight: 300;
+}
+.button-consultation_line::after {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 2px;
+  background-color: var(--gray);
+  top: 50%;
+  right: -72px;
+}
+.button-consultation_line:hover {
+  outline: 1px solid var(--accent);
+}
+.content__list {
+  counter-reset: my-counter;
+}
+.content__item {
+  cursor: pointer;
+  padding: 10px 0 9px 113px;
+  border: 1px solid var(--gray);
+  counter-increment: my-counter;
+  position: relative;
+  transition: all .5s;
+  width: 450px;
+}
+.content__item::before{
+  position: absolute;
+  content: '0' counter(my-counter);
+  top: 50%;
+  left: 20px;
+  font-size: 36px;
+  font-weight: 400;
+  color: var(--gray);
+  transform:translateY(-50%) rotate(-90deg);
+}
+.content__item:hover{
+  border-color: var(--accent);
+  width: 500px;
+}
+.content__item:hover .content__title,
+.content__item:hover::before{
+  color: var(--accent);
+}
+.content__item:not(:last-child) {
+  margin-bottom: 12px;
+}
+.content__title {
+  font-weight: 300;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+.content__text {
+  font-weight: 300;
+}
