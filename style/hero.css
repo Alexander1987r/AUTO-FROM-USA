@@ -56,5 +56,74 @@ position: relative;
   bottom: -336px;
   right: 0;
   width: 814px;
-  height: 462px;
+  height:auto;
+}
+/*адаптив*/
+@media(max-width:1024px){
+  .hero__image {
+    width: 80%;
+  }
+}
+@media(max-width:900px){
+  .main__title{
+    font-size: 54px;
+  }
+  .hero__title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .button-consultation {
+    margin-bottom: 40px;
+  }
+  .list {
+    padding-left: 50px;
+  }
+  .hero__image {
+    width: 80%;
+    bottom: -300px;
+  }
+}
+@media(max-width:768px){
+  .hero__image {
+    bottom: -265px;
+  }
+}
+@media(max-width:600px){
+  .hero {
+    padding: 160px 0 119px 0;
+  }
+  .hero__container{
+   text-align: center;
+  }
+  .list {
+    justify-content: center;
+    padding-left: 0;
+  }
+  .button-consultation {
+    margin: 0 auto 40px auto;
+  }
+  .hero__image {
+    width: 70%;
+    bottom: -240px;
+  }
+}
+@media(max-width:520px){
+  .hero {
+    padding: 190px 0 0 0;
+  }
+  .main__title{
+    margin-bottom: 20px;
+  }
+  .hero__image {
+    position: static;
+    width: 100%;
+  }
+  .list{
+    margin-bottom: 30px;
+  }
+}
+@media(max-width:340px){
+  .main__title{
+    font-size: 44px;
+  }
 }

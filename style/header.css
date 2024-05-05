@@ -8,6 +8,7 @@
 }
 .header__container{
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 .logo {
@@ -24,4 +25,26 @@
   font-size: 36px;
   text-transform: uppercase;
   outline: 3px solid green;
+}
+/*адаптив*/
+@media(max-width:900px){
+  .header__link {
+    color: var(--white);
+    font-size: 24px;
+    text-transform: uppercase;
+    outline: 3px solid green;
+  }
+}
+@media(max-width:520px){
+  .header__container{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .logo{
+    margin-bottom: 15px;
+  }
+  .header__link {
+    width: 100%;
+    text-align: center;
+  }
 }
