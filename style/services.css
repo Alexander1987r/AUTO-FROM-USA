@@ -10,7 +10,6 @@
   color: var(--branded);
   text-transform: uppercase;
   margin-bottom: 50px;
-  outline: 1px solid;
   display: inline-block;
 }
 .title_line {
@@ -26,7 +25,6 @@
   right: -100px;
 }
 .text {
-  outline: 1px solid;
   width: 505px;
   margin-right: 96px;
 }
@@ -49,11 +47,11 @@
 .text__content:not(:last-child) {
   margin-bottom: 12px;
 }
-.button-consultation {
+.services__button{
+  margin-bottom: 0;
 }
 .button-consultation_line {
-  margin-bottom: 0;
-  position: relative;
+    position: relative;
 }
 .button-consultation_line::before {
   content: 'ЖМИ';
@@ -117,4 +115,84 @@
 }
 .content__text {
   font-weight: 300;
+}
+
+/*адаптив*/
+@media(max-width:1140px){
+  .content__item:hover{
+    border-color: var(--accent);
+    width: 450px;
+  }
+}
+@media(max-width:1024px){
+  .services {
+    padding: 250px 0 50px 0;
+  }
+  .services__inner {
+    display: flex;
+    flex-direction: column;
+  }
+  .services__button{
+    margin: 0 auto;
+  }
+  .text {
+    width: 100%;
+    margin-right:0;
+    order: 2;
+  }
+  .content{
+    order: 1;
+  }
+  .content__list {
+   margin-bottom: 30px;
+  }
+  .content__item{
+    width: 100%;
+  }
+  .content__item:hover{
+    width: 100%;
+  }
+}
+@media(max-width:768px){
+  .title {
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-align: center;
+    display: block;
+  }
+  .title_line::before{
+    display: none;
+  }
+}
+@media(max-width:600px){
+  .services {
+    padding: 150px 0 50px 0;
+  }
+  .text {
+    text-align: center;
+  }
+
+}
+@media(max-width:520px){
+  .services {
+    padding: 50px 0 50px 0;
+  }
+  .content__item {
+    padding: 10px 0 9px 60px;
+  }
+  .content__item::before{
+    left: 11px;
+  }
+  .button-consultation_line::after {
+    right: -40px;
+  }
+  .button-consultation_line::before {
+    right: -70px;
+  }
+}
+@media(max-width:430px){
+  .button-consultation_line::before,
+  .button-consultation_line::after {
+    display: none;
+  }
 }

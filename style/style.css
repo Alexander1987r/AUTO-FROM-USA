@@ -72,11 +72,16 @@ h1,h2,h3,p,figure,fieldset{
   overflow: hidden;
 }
 .container{
-
   --offset-container:10px;
   max-width: 1220px;
   /*max-width:calc(1300px + var(--offset-container*2));
   */
   padding: 0 var(--offset-container);
   margin: 0 auto;
+}
+
+  @media(max-width:600px){
+    body{
+      font-size: 16px;
+    }
   }

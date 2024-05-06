@@ -10,12 +10,10 @@ display: inline-block;
 padding-left: 185px;
 }
 .reasons-inner__image {
-  outline: 1px solid;
   width: 320px;
   height: 606px;
 }
 .reasons-inner__list {
-  outline: 1px solid red;
   color: var(--white);
   background-color: var(--branded);
   padding: 23px 260px 45px 185px;
@@ -43,4 +41,32 @@ padding-left: 185px;
 .reasons-inner__text {
   font-size: 18px;
   font-weight: 300;
+}
+
+@media(max-width:1024px){
+  .reasons {
+    padding: 0 0 50px 0;
+  }
+  .reasons__title{
+   padding-left: 0;}
+  .reasons-inner__image {
+    display: none;
+  }
+  .reasons-inner__content{
+    width: 100%;
+  }
+}
+@media(max-width:768px){
+  .reasons__title{
+    text-align: center;
+    display: block;
+  }
+  .reasons-inner__list {
+    padding: 25px  15px;
+    text-align: center;
+  }
+  .reasons-inner__item {
+    max-width:100%;
+
+  }
 }

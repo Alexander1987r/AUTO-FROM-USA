@@ -13,3 +13,16 @@
 .footer__list{
   padding-left: 0;
 }
+/*адаптив*/
+@media(max-width:650px){
+ 
+  .footer__container {
+    flex-direction: column;
+  }
+  .footer__logo{
+    margin-bottom: 20px;
+  }
+  .footer__list{
+    margin-bottom: 20px;
+  }
+}
